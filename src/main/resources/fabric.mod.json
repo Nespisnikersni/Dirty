@@ -25,7 +25,10 @@
 			"nespisnikersni.dirty.DirtyDatagen"
 		],
 		"terrablender": [
-			"nespisnikersni.dirty.biomes.DirtyTerraBlenderApi"
+          "nespisnikersni.dirty.world.biomes.DirtyTerraBlenderApi"
+		],
+		"emi": [
+			"nespisnikersni.dirty.compat.emi.DirtyEMIPlugin"
 		]
 	},
 	"mixins": [

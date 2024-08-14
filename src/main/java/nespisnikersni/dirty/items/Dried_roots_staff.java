@@ -26,14 +26,13 @@ import net.minecraft.util.math.Box;
 import java.util.List;
 
 public class Dried_roots_staff extends SwordItem {
-    public Dried_roots_staff(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    public Dried_roots_staff(ToolMaterial toolMaterial,int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
     private int mode;
     private Text modeName;
 
     public void switchMode(ItemStack stack) {
-        System.out.println(mode);
         mode = (mode + 1) % 5;
         stack.getOrCreateNbt().putInt("mode",mode);
         modeName=Text.translatable("dirty.mode"+String.valueOf(mode));
@@ -46,7 +45,7 @@ public class Dried_roots_staff extends SwordItem {
                 if (!world.isClient) {
                     switchMode(user.getStackInHand(hand));
                     user.sendMessage(Text.translatable("dirty.mode").append(modeName).formatted(Formatting.YELLOW),true);
-                    return TypedActionResult.success(user.getStackInHand(hand));
+                    return TypedActionResult.success(stack);
                 }
             } else {
             switch (mode) {
@@ -186,8 +185,4 @@ public class Dried_roots_staff extends SwordItem {
             }
         return super.use(world, user, hand);
     }
-
-
-
-
 }

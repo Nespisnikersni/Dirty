@@ -1,8 +1,8 @@
 package nespisnikersni.dirty.blocks.entities.processing_table;
 
-import nespisnikersni.dirty.Dirty;
 import nespisnikersni.dirty.blocks.entities.DirtyBlockEntities;
 import nespisnikersni.dirty.items.DirtyItems;
+import nespisnikersni.dirty.items.HammerItem;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -50,9 +50,9 @@ public class ProcessingTable extends BlockWithEntity implements BlockEntityProvi
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ProcessingTableEntity blockEntity = (ProcessingTableEntity) world.getBlockEntity(pos);
-        if(player.getMainHandStack().getItem()==DirtyItems.DIAMOND_HAMMER) {
+        if(player.getMainHandStack().getItem() instanceof HammerItem) {
             blockEntity.increaseProgress();
-        }else{
+        } else{
             blockEntity.addItem(player.getMainHandStack().getItem());
         }
         return ActionResult.SUCCESS;

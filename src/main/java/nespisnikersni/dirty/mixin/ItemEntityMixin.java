@@ -1,8 +1,6 @@
 package nespisnikersni.dirty.mixin;
 
-import nespisnikersni.dirty.items.BurntIronSheet;
 import nespisnikersni.dirty.items.DirtyItems;
-import nespisnikersni.dirty.items.Dried_roots_sword;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;

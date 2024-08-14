@@ -1,9 +1,10 @@
 {
-  "type": "minecraft:smelting",
+  "type": "dirty:screening",
   "ingredient": {
-    "item": "dirty:piece_of_dirt"
+    "item": "minecraft:dirt"
   },
-  "result": "dirty:living_roots",
-  "experience": 0.1,
-  "cookingtime": 200
+  "result": {
+    "item": "dirty:living_roots",
+    "count": 1
+  }
 }

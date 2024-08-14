@@ -2,7 +2,6 @@ package nespisnikersni.dirty;
 
 import nespisnikersni.dirty.blocks.DirtyBlocks;
 import nespisnikersni.dirty.blocks.entities.DirtyBlockEntities;
-import nespisnikersni.dirty.blocks.entities.processing_table.ProcessingTableEntity;
 import nespisnikersni.dirty.enchants.DirtyEnchants;
 import nespisnikersni.dirty.entities.ModEntities;
 import nespisnikersni.dirty.entities.mobs.guard.GuardEntity;
@@ -12,15 +11,12 @@ import nespisnikersni.dirty.items.DirtyItems;
 import nespisnikersni.dirty.recipes.types.DirtRecyclerRecipeType;
 import nespisnikersni.dirty.recipes.types.ProcessingTableRecipeType;
 import nespisnikersni.dirty.recipes.types.SieveRecipeType;
-import nespisnikersni.dirty.screenhandlers.DirtyScreenHandlers;
+import nespisnikersni.dirty.blocks.entities.dirt_recycler.screenhandlers.DirtyScreenHandlers;
+import nespisnikersni.dirty.util.loot.DirtyLootModifier;
+import nespisnikersni.dirty.world.gen.DirtyOreGeneration;
 import net.fabricmc.api.ModInitializer;
-
-import net.fabricmc.fabric.api.event.EventFactory;
-import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.entity.ItemEntity;
-import net.minecraft.item.ItemStack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,14 +30,16 @@ public class Dirty implements ModInitializer {
 		DirtyItems.register();
 		DirtyEnchants.register();
 		DirtyBlockEntities.register();
-		PlayerBlockBreakEvents.AFTER.register(new DirtyEvents());
+		DirtyEvents.register();
 		DirtyScreenHandlers.register();
 		FabricDefaultAttributeRegistry.register(ModEntities.MUD_ENTITY_TYPE, MudEntity.createMudAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.GUARD_ENTITY_TYPE, GuardEntity.createGuardAttributes());
 		DirtRecyclerRecipeType.register();
 		ProcessingTableRecipeType.register();
 		SieveRecipeType.register();
-		FuelRegistry.INSTANCE.add(DirtyItems.BIOFUEL,1200);
+		FuelRegistry.INSTANCE.add(DirtyItems.BIOFUEL,2000);
+		DirtyLootModifier.register();
+		DirtyOreGeneration.generateOres();
 	}
 
 }

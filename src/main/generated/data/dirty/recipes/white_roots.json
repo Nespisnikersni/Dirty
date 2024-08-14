@@ -1,0 +1,10 @@
+{
+  "type": "dirty:processing",
+  "ingredient": {
+    "item": "dirty:white_cristal"
+  },
+  "result": {
+    "count": 1,
+    "item": "dirty:white_roots"
+  }
+}

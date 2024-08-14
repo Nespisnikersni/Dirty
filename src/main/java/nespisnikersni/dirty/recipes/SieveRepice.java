@@ -41,6 +41,13 @@ public class SieveRepice implements Recipe<SimpleInventory> {
     public ItemStack getOutput(DynamicRegistryManager registryManager) {
         return output;
     }
+    public ItemStack getOutput() {
+        return output;
+    }
+
+    public Ingredient getIngredient() {
+        return ingredient;
+    }
 
     @Override
     public Identifier getId() {

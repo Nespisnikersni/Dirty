@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "dirty:white_roots"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "D D"
+  ],
+  "result": {
+    "item": "dirty:white_roots_helmet"
+  },
+  "show_notification": true
+}

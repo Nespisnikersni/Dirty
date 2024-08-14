@@ -3,7 +3,7 @@ package nespisnikersni.dirty.blocks.entities.dirt_recycler;
 import nespisnikersni.dirty.blocks.entities.DirtyBlockEntities;
 import nespisnikersni.dirty.blocks.entities.ImplementedInventory;
 import nespisnikersni.dirty.recipes.types.DirtRecyclerRecipeType;
-import nespisnikersni.dirty.screenhandlers.DirtRecyclerScreenHandler;
+import nespisnikersni.dirty.blocks.entities.dirt_recycler.screenhandlers.DirtRecyclerScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;

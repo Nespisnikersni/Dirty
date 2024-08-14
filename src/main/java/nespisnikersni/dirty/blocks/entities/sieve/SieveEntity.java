@@ -2,7 +2,6 @@ package nespisnikersni.dirty.blocks.entities.sieve;
 
 import nespisnikersni.dirty.blocks.entities.DirtyBlockEntities;
 import nespisnikersni.dirty.blocks.entities.ImplementedInventory;
-import nespisnikersni.dirty.blocks.entities.processing_table.ProcessingTableEntity;
 import nespisnikersni.dirty.recipes.types.ProcessingTableRecipeType;
 import nespisnikersni.dirty.recipes.types.SieveRecipeType;
 import net.minecraft.block.BlockState;

@@ -106,6 +106,12 @@
     "axolotls": [],
     "creature": [
       {
+        "type": "minecraft:pig",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 25
+      },
+      {
         "type": "minecraft:frog",
         "maxCount": 5,
         "minCount": 2,
@@ -119,6 +125,12 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 100
+      },
+      {
+        "type": "dirty:mud_dog",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 200
       },
       {
         "type": "minecraft:zombie",

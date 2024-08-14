@@ -8,13 +8,17 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
+import java.util.Map;
 import java.util.Random;
 
 public class DirtyEnchants {
-    public static final Enchantment BOER = new Enchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND}) {};
+    public static final Enchantment BOER = new BoerEnchant(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND}) {};
     public static final Enchantment AUTO_SMELT = new Enchantment(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND}){};
     public static final Enchantment REGENERATION = new Enchantment(Enchantment.Rarity.RARE, EnchantmentTarget.ARMOR, new EquipmentSlot[]{}){
         @Override
@@ -75,7 +79,8 @@ public class DirtyEnchants {
             return 3;
         }
     };
-    public static final Enchantment FLY = new Enchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR_FEET, new EquipmentSlot[]{EquipmentSlot.FEET}) {};
+    public static final Enchantment FLY = new FlyEnchant(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR_FEET, new EquipmentSlot[]{EquipmentSlot.FEET}) {};
+    public static final Enchantment ATTRACTION = new AttractionEnchant(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND,EquipmentSlot.OFFHAND}) {};
 
     public static void register() {
         Registry.register(Registries.ENCHANTMENT, new Identifier(Dirty.MOD_ID, "boer"), BOER);
@@ -83,5 +88,6 @@ public class DirtyEnchants {
         Registry.register(Registries.ENCHANTMENT, new Identifier(Dirty.MOD_ID, "regeneration"), REGENERATION);
         Registry.register(Registries.ENCHANTMENT, new Identifier(Dirty.MOD_ID, "wither"), WITHER);
         Registry.register(Registries.ENCHANTMENT, new Identifier(Dirty.MOD_ID, "fly"), FLY);
+        Registry.register(Registries.ENCHANTMENT, new Identifier(Dirty.MOD_ID, "attraction"), ATTRACTION);
     }
 }

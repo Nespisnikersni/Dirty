@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "dirty:white_roots"
+    },
+    "S": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " DD",
+    " SD",
+    " S "
+  ],
+  "result": {
+    "item": "dirty:white_roots_axe"
+  },
+  "show_notification": true
+}
