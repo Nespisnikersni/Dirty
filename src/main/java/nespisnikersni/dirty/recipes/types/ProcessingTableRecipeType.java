@@ -1,7 +1,7 @@
 package nespisnikersni.dirty.recipes.types;
 
 import nespisnikersni.dirty.Dirty;
-import nespisnikersni.dirty.recipes.DirtRecyclerRepice;
+import nespisnikersni.dirty.recipes.DirtRecyclerRecipe;
 import nespisnikersni.dirty.recipes.ProcessingTableRepice;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.registry.Registries;

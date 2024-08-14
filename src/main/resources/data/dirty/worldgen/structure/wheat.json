@@ -12,7 +12,8 @@
         "minecraft:plains",
         "minecraft:taiga",
         "minecraft:meadow",
-        "minecraft:forest"
+        "minecraft:forest",
+        "dirty:mud_swamp"
     ],
     "step": "surface_structures",
     "spawn_overrides": {},

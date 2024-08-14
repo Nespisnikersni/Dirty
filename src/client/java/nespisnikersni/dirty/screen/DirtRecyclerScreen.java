@@ -2,7 +2,7 @@ package nespisnikersni.dirty.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import nespisnikersni.dirty.Dirty;
-import nespisnikersni.dirty.screenhandlers.DirtRecyclerScreenHandler;
+import nespisnikersni.dirty.blocks.entities.dirt_recycler.screenhandlers.DirtRecyclerScreenHandler;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.render.GameRenderer;
@@ -11,7 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class DirtRecyclerScreen extends HandledScreen<DirtRecyclerScreenHandler> {
-    private static final Identifier TEXTURE = new Identifier(Dirty.MOD_ID,"textures/gui/dirt_recycler_screen.png");
+    public static final Identifier TEXTURE = new Identifier(Dirty.MOD_ID,"textures/gui/dirt_recycler_screen.png");
     public DirtRecyclerScreen(DirtRecyclerScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }

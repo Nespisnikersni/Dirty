@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dirty:villager_home",
+      "weight": 150
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 774356300,
+    "spacing": 5,
+    "separation": 2
+  }
+}

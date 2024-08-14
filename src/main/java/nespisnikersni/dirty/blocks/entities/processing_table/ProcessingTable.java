@@ -1,6 +1,5 @@
 package nespisnikersni.dirty.blocks.entities.processing_table;
 
-import nespisnikersni.dirty.Dirty;
 import nespisnikersni.dirty.blocks.entities.DirtyBlockEntities;
 import nespisnikersni.dirty.items.DirtyItems;
 import net.minecraft.block.*;

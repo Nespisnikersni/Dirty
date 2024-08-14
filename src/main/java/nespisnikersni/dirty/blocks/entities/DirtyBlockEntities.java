@@ -4,6 +4,7 @@ import nespisnikersni.dirty.Dirty;
 import nespisnikersni.dirty.blocks.DirtyBlocks;
 import nespisnikersni.dirty.blocks.entities.dirt_recycler.DirtRecyclerEntity;
 import nespisnikersni.dirty.blocks.entities.processing_table.ProcessingTableEntity;
+import nespisnikersni.dirty.blocks.entities.sieve.SieveEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
@@ -22,10 +23,10 @@ public class DirtyBlockEntities {
             new Identifier(Dirty.MOD_ID, "processing_table_entity"),
             FabricBlockEntityTypeBuilder.create(ProcessingTableEntity::new,DirtyBlocks.PROCESSING_TABLE).build()
     );
-    public static final BlockEntityType<ProcessingTableEntity> SIEVE_ENTITY = Registry.register(
+    public static final BlockEntityType<SieveEntity> SIEVE_ENTITY = Registry.register(
             Registries.BLOCK_ENTITY_TYPE,
             new Identifier(Dirty.MOD_ID, "sieve"),
-            FabricBlockEntityTypeBuilder.create(ProcessingTableEntity::new,DirtyBlocks.SIEVE).build()
+            FabricBlockEntityTypeBuilder.create(SieveEntity::new,DirtyBlocks.SIEVE).build()
     );
     public static void register(){}
 }

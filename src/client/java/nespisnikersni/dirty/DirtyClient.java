@@ -3,6 +3,7 @@ package nespisnikersni.dirty;
 import nespisnikersni.dirty.blocks.DirtyBlocks;
 import nespisnikersni.dirty.blocks.entities.DirtyBlockEntities;
 import nespisnikersni.dirty.blocks.render.ProcessingTableRender;
+import nespisnikersni.dirty.blocks.render.SieveRender;
 import nespisnikersni.dirty.entities.ModEntities;
 import nespisnikersni.dirty.entity.guard.GuardModel;
 import nespisnikersni.dirty.entity.guard.GuardRender;
@@ -10,7 +11,7 @@ import nespisnikersni.dirty.entity.mud.Layers;
 import nespisnikersni.dirty.entity.mud.MudModel;
 import nespisnikersni.dirty.entity.mud.MudRender;
 import nespisnikersni.dirty.screen.DirtRecyclerScreen;
-import nespisnikersni.dirty.screenhandlers.DirtyScreenHandlers;
+import nespisnikersni.dirty.blocks.entities.dirt_recycler.screenhandlers.DirtyScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -32,6 +33,7 @@ public class DirtyClient implements ClientModInitializer {
         DirtyScreenHandlers.register();
         HandledScreens.register(DirtyScreenHandlers.DIRT_RECYCLER_SCREEN_HANDLER, DirtRecyclerScreen::new);
         BlockEntityRendererFactories.register(DirtyBlockEntities.PROCESSING_TABLE_ENTITY, ProcessingTableRender::new);
-        BlockRenderLayerMap.INSTANCE.putBlock(DirtyBlocks.PROCESSING_TABLE, RenderLayer.getTranslucent());
+        BlockEntityRendererFactories.register(DirtyBlockEntities.SIEVE_ENTITY, SieveRender::new);
+        BlockRenderLayerMap.INSTANCE.putBlock(DirtyBlocks.SIEVE, RenderLayer.getTranslucent());
     }
 }

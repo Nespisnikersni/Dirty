@@ -8,6 +8,8 @@
       "item": "minecraft:diamond"
     }
   ],
-  "result": "dirty:dried_roots",
-  "count": 1
+  "result": {
+    "item": "dirty:dried_roots",
+    "count": 1
+  }
 }
