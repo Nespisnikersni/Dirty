@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 // 1.20.1	2024-08-15T16:34:17.3606098	Dirty/World Gen
 a9db4da1f937e187a468ccfc19ba7bd92c29c21a data\dirty\worldgen\placed_feature\white_dust_ore_placed.json
 11804b6eb194f62cfb7ac1cb0cffe4c087468d1e data\dirty\worldgen\configured_feature\white_dust_ore.json
+=======
+// 1.20.1	2024-07-26T11:18:45.1025205	Dirty/World Gen
+a931899d11eba779cdaa9501731686b290270989 data\dirty\worldgen\placed_feature\white_dust_ore_placed.json
+131573a80697be60d0d42ca24e12cfe4422c3431 data\dirty\worldgen\configured_feature\white_dust_ore.json
+>>>>>>> origin/main
 d6e9e35798fe6a9c743e388c5eb5dd23cb20e787 data\dirty\worldgen\biome\mud_swamp.json

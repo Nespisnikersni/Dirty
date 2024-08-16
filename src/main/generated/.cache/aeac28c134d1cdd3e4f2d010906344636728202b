@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 1.20.1	2024-08-15T16:34:17.3596135	Dirty/Model Definitions
 92b7d42919e9ae695df51defc16a6aa092f6620d assets\dirty\models\block\white_dust_ore.json
 fa4dd97f64e857cc26a3164b97504f3cde046e31 assets\dirty\models\item\white_cristal.json
@@ -5,6 +6,13 @@ db84948c339adf863c85286671f25cd7893b98fb assets\dirty\models\item\white_roots_ch
 bb2a5c6eb72fce8bd52904312023077e98e5ecbe assets\dirty\blockstates\white_dust_ore.json
 4a213f098ea279614edaf787c3c3dbd1518e2f35 assets\dirty\models\item\white_roots_leggings.json
 8f1d2321cba6933310362bea1ba88055cdfec77d assets\dirty\models\item\white_dust.json
+=======
+// 1.20.1	2024-07-26T11:18:45.1015249	Dirty/Model Definitions
+92b7d42919e9ae695df51defc16a6aa092f6620d assets\dirty\models\block\white_dust_ore.json
+db84948c339adf863c85286671f25cd7893b98fb assets\dirty\models\item\white_roots_chestplate.json
+bb2a5c6eb72fce8bd52904312023077e98e5ecbe assets\dirty\blockstates\white_dust_ore.json
+4a213f098ea279614edaf787c3c3dbd1518e2f35 assets\dirty\models\item\white_roots_leggings.json
+>>>>>>> origin/main
 d1adc78d393de042840ea4816df638fa877d2779 assets\dirty\models\item\white_dust_ore.json
 3719f22c147bf52b4b835c653431aa8be4d105e5 assets\dirty\models\item\white_roots_helmet.json
 207e3f7ec53ce96c0823cf65a99d2a61466b20cd assets\dirty\models\item\white_roots_boots.json

@@ -9,7 +9,6 @@ import nespisnikersni.dirty.recipes.SieveRepice;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 

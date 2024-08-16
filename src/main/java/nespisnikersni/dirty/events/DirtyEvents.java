@@ -174,7 +174,6 @@ public class DirtyEvents implements PlayerBlockBreakEvents.After, ServerLivingEn
         return smeltedDrops;
     }
     private void chopTree(World world, PlayerEntity player ,BlockPos pos) {
-        System.out.println(1);
         Queue<BlockPos> blocksToCheck = new LinkedList<>();
         for(int i=0;i<10;i++){
             if(!world.getBlockState(pos.add(0,i,0)).isIn(BlockTags.LOGS)) {
